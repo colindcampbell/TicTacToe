@@ -1,0 +1,60 @@
+
+body{background-color:#160773;margin: 0px;font-family: 'Fredoka One';color:white;}
+button{cursor:pointer;font-family: 'Fredoka One'; height: 30px; border: 2px solid #1240ab;
+	background-color:#160773;color:white;border-radius: 5px; font-size: 18px;
+	-webkit-transition: background-color .3s,color .3s;
+}
+button:hover{font-family: 'Fredoka One'; height: 30px; border: 2px solid #1240ab;
+	background-color:#6c8ad5;color:#1240ab;border-radius: 5px;
+	-webkit-transition: background-color .3s,color .3s;
+}
+input{width: 90px; height: 28px;margin-bottom: 10px;font-size: 18px;text-align: center;}
+.allEmpty{float:left; border:0px solid white; width:75px; 
+	height:75px; background-color:white; color:white;
+	border-radius: 50px;text-align: center;
+	font-family: 'Fredoka One';
+	-webkit-transition: background-color .3s,color .3s, border-radius .2s ease-out;
+}
+.empty{float:left; border:0px solid white; width:75px; 
+	height:75px; background-color:white; color:#1240ab;
+	border-radius: 50px;text-align: center;
+	font-family: 'Fredoka One';
+	-webkit-transition: background-color .3s,color .3s, border-radius .2s ease-out;
+}
+.empty:hover{;float:left; border:0px solid white; width:75px; 
+	height:75px; color:#1240ab;background-color:#6c8ad5;
+	border-radius: 5px;text-align: center;
+	font-family: 'Fredoka One';z-index: 1;
+	-webkit-transition: background-color .3s,color .3s,border-radius .2s ease-out;
+	
+}
+
+.row{clear:both;font-size: 62px;}
+.main{margin: 0px auto;width: 500px;}
+.clear{clear:both;}
+.score{width:201px;color: white;margin:2px auto 12px auto;height: 20px;}
+.scores{width: 67px; float: left;text-align: center;font-size: 22px;}
+
+.threeStyle{width: 225px;margin: 0px auto;}
+.fourStyle{width: 300px;margin: 0px auto;}
+.fiveStyle{width: 375px;margin: 0px auto;}
+
+.gameSize{width:188px;margin: 0px auto 10px auto;}
+.playAgain{width:248px;margin: 0px auto 0px auto;text-align: center;}
+.playAgain button {margin-top: 10px;width:120px;}
+.hidden{display: none}
+h1{text-align: center;margin-top: 10px;margin-bottom: 10px;}
+h2{text-align: center;margin: 10px 0 5px 0;}
+#player1{
+	float: left;
+}
+#player2{
+	float:right;
+}
+.nameContainer{width:275px;font-size: 28px;margin: 0px auto;}
+.xBackground{background-color: #5e4bd8;border-radius: 10px;}
+.oBackground{background-color: #086ca2;border-radius: 10px;}
+.xWinner{background-color: black;}
+.oWinner{background-color: black;}
+
+

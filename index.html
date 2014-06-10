@@ -1,0 +1,80 @@
+<!doctype html>
+<!-- Making a 3x3 grid with clickable divs in Angular -->
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	
+	<script src="angular.min.js"></script>
+	<script src="TicTacToe.js"></script>
+
+	<link href='http://fonts.googleapis.com/css?family=Sniglet' rel='stylesheet' type='text/css'>
+
+	<link href='http://fonts.googleapis.com/css?family=Comfortaa:700' rel='stylesheet' type='text/css'>
+
+	<link href='http://fonts.googleapis.com/css?family=Wallpoet' rel='stylesheet' type='text/css'>
+
+	<link href='http://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
+	
+	<link rel="stylesheet" href="style.css" type="text/css">
+
+
+</head>
+<body x-ng-app="" x-ng-controller ="DetermineWinnerController" x-ng-init="size=3; init(); reset();">
+	<h1>TicTacToe</h1>
+	<div class="nameContainer">
+		<div id="player1">
+			<input placeholder="Player 1" maxlength="10">
+			<button>X</button>
+		</div>
+		
+		<div id="player2">
+			<button>O</button><input placeholder="Player 2" maxlength="10">
+
+		</div>
+
+	</div>
+
+	<div class="clear"></div>
+
+	<div class="score">
+		<div class="scores">{{xScore}}</div>
+		<div class="scores">{{catsGame}}</div>
+		<div class="scores">{{oScore}}</div>
+	</div>
+
+	<div class="clear"></div>
+
+	<div class="gameSize">
+		<span>Size:</span>
+			<button x-ng-click="size=3; init();">3x3</button>
+			<button x-ng-click="size=4; init();">4x4</button>
+			<button x-ng-click="size=5; init();">5x5</button>
+	</div>
+
+	<div class="clear"></div>
+
+	<div x-ng-class="sizeStyle">
+		<div class="row" x-ng-repeat="r in rows track by $index">
+			<div x-ng-repeat="cell in r track by $index" x-ng-click="click($parent.$index, $index)" x-ng-class="{allEmpty:true,oBackground:cell=='O',empty:cell=='',xWinner:cell==' X ', xBackground:cell=='X', oWinner:cell==' O '}">
+				{{cell}}
+			</div>
+		</div>
+	</div>
+
+	<div class="clear"></div>
+	
+	<h2>{{winner}}</h2>
+
+	<div class="playAgain">
+		<button x-ng-click="init();">Play Again</button>
+		<button x-ng-click="reset(); init();">Reset Score</button>
+	</div>
+	
+	
+	
+<span></span>
+</body>
+</html>
